@@ -12,7 +12,8 @@ $(document).ready(() => {
 		"bottom": "100px",
 		"right": "100px",
 		"background": "#000000",
-		"opacity": "0.6",
+		"transition": ".2s opacity",
+		"display": "none"
 	})
 
 	link.css({
@@ -25,5 +26,15 @@ $(document).ready(() => {
 		"font-size": "45px",
 		"text-decoration": "none",
 		"font-family": "\"Segoe UI\", Consolas"
+	})
+
+	$(window).scroll(() => {
+		if ($(window).scrollTop() > 100) {
+			up.css({"display": "block"})
+			up.animate({"opacity": "0.6"}, .2)
+		} else {
+			up.css({"opacity": "0"})
+			up.css({"display": "none"})
+		}
 	})
 })
