@@ -32,12 +32,14 @@ h2 {
 	color: #2D2D6d;
 }
 
-p, #contents-inner, li {
+p, #contents-inner, li, table {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul, ol {
 	line-height: 1.67;
+	position: relative; 
+	left: 1rem;
 }
 /* /~meta */
 
@@ -89,7 +91,7 @@ h1.header-logo {
 
 #contents-inner {
 	background: #00000028;
-	padding: 15px 2rem;
+	padding: 15px 1.2rem;
 	margin-bottom: 15px;
 	width: 360px;
 }
@@ -107,10 +109,17 @@ h1.header-logo {
 	left: 1.5rem;
 }
 
-#contents-inner a {
+/* #contents-inner a {
 	color: #000000e0;
 }
 #contents-inner a:hover {
+	text-decoration: none;
+	color: #00000080;
+} */
+a {
+	color: #000000e0;
+}
+a:hover {
 	text-decoration: none;
 	color: #00000080;
 }
@@ -140,3 +149,30 @@ footer {
 	color: #ffffffe0;
 	font-family: "Consolas";
 }
+
+.oglav {
+	padding: 0 15px;
+}
+
+/* tables */
+.table1 {
+	width: 100%;
+	margin-top: 15px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.table1 th,
+.table1 td {
+	border: 1px solid #242424;
+	text-align: center;
+	padding: .2em;
+	word-wrap: break-word;
+}
+
+.absolute-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/* /tables */

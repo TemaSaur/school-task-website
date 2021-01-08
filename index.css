@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #bebefa;
+}
+
+#oglav {
+	width: 202px;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	border-right: 2px solid #2D2D6d;
+}
+
+#main {
+	width: calc(100vw - 202px);
+	height: 100vh;
+	position: absolute;
+	left: 202px;
+}
