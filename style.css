@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	background: #bebefa;
+	color: #242424;
+	overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ~meta */
+.container {
+	width: 97%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Consolas", "Courier New", monospace;
+	margin: .8em 0 .5em;
+}
+
+h2 {
+	border-bottom: 2px solid #2D2D6d;
+	color: #2D2D6d;
+}
+
+p, #contents-inner, li {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, ol {
+	line-height: 1.67;
+}
+/* /~meta */
+
+h1.header-logo {
+	text-align: center;
+}
+
+/* quote */
+.quote {
+	background: #2D2D6d;
+	color: #ffffffe0;
+	padding: 15px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.quote p {
+	margin-bottom: 20px;
+}
+
+.quote p::before {
+	content: '“';
+	display: inline-block;
+	font-family: "Consolas";
+	transform: translate(-.8rem, .3em) scale(2.5);
+}
+
+.quote cite::before {
+	content: "— ";
+}
+/* /quote */
+
+/* main.content */
+
+.content p {
+	text-indent: 1.5rem;
+}
+
+#contents-btn {
+	display: block;
+	background: #2D2D6d;
+	color: #ffffffe0;
+	outline: none;
+	border: none;
+	margin: 15px 0;
+	padding: .6em 1em;
+	cursor: pointer;
+}
+
+#contents-inner {
+	background: #00000028;
+	padding: 15px 2rem;
+	margin-bottom: 15px;
+	width: 360px;
+}
+
+#contents-inner.hidden {
+	display: none
+}
+
+#contents-inner ul {
+	margin: 0;
+}
+
+#contents-inner ol li ul {
+	position: relative;
+	left: 1.5rem;
+}
+
+#contents-inner a {
+	color: #000000e0;
+}
+#contents-inner a:hover {
+	text-decoration: none;
+	color: #00000080;
+}
+
+.content-image {
+	display: block;
+	max-width: 80%;
+	max-height: 320px;
+	margin: 20px auto;
+	box-shadow: #00000040 5px 5px 20px;
+}
+
+.content ul {
+	position: relative;
+	left: 1rem;
+	margin-top: 10px;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2D2D6d;
+	color: #ffffffe0;
+	font-family: "Consolas";
+}
