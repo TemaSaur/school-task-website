@@ -265,5 +265,11 @@ footer {
 .links {
 	grid-area: links;
 }
-
 /* /grid layout */
+
+.monk {
+	padding-top: 15px;
+	max-height: 80vh;
+	display: block;
+	margin: 0 auto;
+}
