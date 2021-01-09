@@ -9,6 +9,7 @@ body {
 	background: #bebefa;
 	color: #242424;
 	overflow-x: hidden !important;
+	overflow-y: auto;
 }
 
 html {

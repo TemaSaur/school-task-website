@@ -7,6 +7,8 @@ $(document).ready(() => {
 	const img = $('#bigImg')
 	const block = $('#hiden-blak')
 
+	let overflow;
+
 	block.css({
 		'height': '100vh',
 		'width': '100vw',
@@ -40,7 +42,9 @@ $(document).ready(() => {
 			'opacity': '1'
 		})
 		
-		$('body').css('overflow', 'hidden')
+		overflow = $("body").css("overflow-y")
+		console.log(overflow)
+		$('body').css('overflow-y', 'hidden')
 	})
 
 	block.click(() => {
@@ -48,6 +52,6 @@ $(document).ready(() => {
 			'top': '100%',
 			'opacity': '0'
 		})
-		$('body').css('overflow', 'auto')
+		$('body').css('overflow-y', overflow)
 	})
 })
