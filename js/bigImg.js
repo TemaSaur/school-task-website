@@ -43,7 +43,6 @@ $(document).ready(() => {
 		})
 		
 		overflow = $("body").css("overflow-y")
-		console.log(overflow)
 		$('body').css('overflow-y', 'hidden')
 	})
 
