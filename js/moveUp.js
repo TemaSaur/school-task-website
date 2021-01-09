@@ -25,7 +25,7 @@ $(document).ready(() => {
 		"color": "#ffffff",
 		"font-size": "45px",
 		"text-decoration": "none",
-		"font-family": "\"Segoe UI\", Consolas"
+		"font-family": "Tahoma, Veranda, \"Segoe UI\""
 	})
 
 	$(window).scroll(() => {
