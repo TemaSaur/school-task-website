@@ -8,6 +8,7 @@
 	--main: #D4F1F4;
 	--submain: #9DDEC7;
 	--accent: #05445E;
+	--midaccent: #0f6f89;
 	--subaccent: #189AB4;
 	--whitetext: #ffffffe0;
 	--black: #000000e0;
@@ -98,6 +99,12 @@ h1.header-logo {
 	margin: 15px 0;
 	padding: .6em 1em;
 	cursor: pointer;
+}
+#contents-btn:hover {
+	background: var(--midaccent);
+}
+#contents-btn:active {
+	background: var(--accent);
 }
 
 #contents-inner {
