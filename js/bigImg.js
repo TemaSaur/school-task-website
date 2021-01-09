@@ -7,7 +7,7 @@ $(document).ready(() => {
 	const img = $('#bigImg')
 	const block = $('#hiden-blak')
 
-	let overflow;
+	const overflow = $("body").css("overflow-y")
 
 	block.css({
 		'height': '100vh',
@@ -42,7 +42,6 @@ $(document).ready(() => {
 			'opacity': '1'
 		})
 		
-		overflow = $("body").css("overflow-y")
 		$('body').css('overflow-y', 'hidden')
 	})
 
