@@ -3,8 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
-	background: #bebefa;
+	background: #D4F1F4;
 }
 
 #oglav {
@@ -12,7 +13,7 @@ body {
 	height: 100vh;
 	position: absolute;
 	left: 0;
-	border-right: 2px solid #2D2D6d;
+	border-right: 2px solid #05445E;
 }
 
 #main {

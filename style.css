@@ -4,10 +4,19 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--main: #D4F1F4;
+	--submain: #9DDEC7;
+	--accent: #05445E;
+	--subaccent: #189AB4;
+	--whitetext: #ffffffe0;
+	--black: #000000e0;
+}
+
 body {
 	font-size: 16px;
-	background: #bebefa;
-	color: #242424;
+	background: var(--main);
+	color: var(--black);
 	overflow-x: hidden !important;
 	overflow-y: auto;
 }
@@ -29,8 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	border-bottom: 2px solid #2D2D6d;
-	color: #2D2D6d;
+	border-bottom: 2px solid var(--accent);
+	color: var(--accent);
 }
 
 p, #contents-inner, li, table {
@@ -50,8 +59,8 @@ h1.header-logo {
 
 /* quote */
 .quote {
-	background: #2D2D6d;
-	color: #ffffffe0;
+	background: var(--accent);
+	color: var(--whitetext);
 	padding: 15px;
 	margin-bottom: 20px;
 	text-align: right;
@@ -81,8 +90,8 @@ h1.header-logo {
 
 #contents-btn {
 	display: block;
-	background: #2D2D6d;
-	color: #ffffffe0;
+	background:  var(--subaccent);
+	color: var(--whitetext);
 	outline: none;
 	border: none;
 	margin: 15px 0;
@@ -91,7 +100,7 @@ h1.header-logo {
 }
 
 #contents-inner {
-	background: #00000028;
+	background: var(--submain);
 	padding: 15px 1.2rem;
 	margin-bottom: 15px;
 	width: 360px;
@@ -110,15 +119,8 @@ h1.header-logo {
 	left: 1.5rem;
 }
 
-/* #contents-inner a {
-	color: #000000e0;
-}
-#contents-inner a:hover {
-	text-decoration: none;
-	color: #00000080;
-} */
 a {
-	color: #000000e0;
+	color: var(--black);
 }
 a:hover {
 	text-decoration: none;
@@ -146,8 +148,8 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #2D2D6d;
-	color: #ffffffe0;
+	background: var(--accent);
+	color: var(--whitetext);
 	font-family: "Consolas";
 }
 
@@ -165,7 +167,7 @@ footer {
 
 .table1 th,
 .table1 td {
-	border: 1px solid #242424;
+	border: 1px solid var(--black);
 	text-align: center;
 	padding: .2em;
 	word-wrap: break-word;
