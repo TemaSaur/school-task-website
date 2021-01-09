@@ -173,6 +173,10 @@ footer {
 	word-wrap: break-word;
 }
 
+.table1 th {
+	background: var(--submain);
+}
+
 .absolute-footer {
 	position: absolute;
 	bottom: 0;
